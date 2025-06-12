@@ -1,0 +1,1 @@
+botoes.classList.add("oculto");

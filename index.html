@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedido de Namoro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Deseja saber uma coisa?</h1>
+    <div class="botoes">
+      <button id="sim">Sim</button>
+      <button id="nao">Não</button>
+    </div>
+    <div class="mensagem" id="mensagem"></div>
+  </div>
+
+    <audio id="musica" autoplay loop>
+      <source src="Quero te Ter Por Perto.mp3" type="audio/mpeg">
+    </audio>
+
+  <script>
+    const botaoSim = document.getElementById("sim");
+    const botaoNao = document.getElementById("nao");
+    const mensagem = document.getElementById("mensagem");
+
+    botaoSim.addEventListener("click", () =>{
+      botaoSim.style.display = "none";
+      botaoNao.style.display = "none";
+      document.getElementById("musica").play();
+
+      mensagem.innerHTML = `
+        <p>Neste dia dos namorados, apesar de ainda não ter feito o pedido oficial, eu queria que você soubesse de uma coisa<br>
+          E é você, sim, é você<br>
+          O fim de todo desalinho, o florescer do meu caminho.
+          É você, sim, é você.
+          O fim de toda despedida, o meu amor pra toda vida<br>
+          Você é a minha melhor escolha, minha gatinha! 💚💍</p>
+        <img src="IMG-20250608-WA0007.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20250608-WA0029.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20250606-WA0062.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20250606-WA0064.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20250531-WA0106.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG_0178.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="SBH24-199 (1).jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20240907-WA0009.jpg" alt="Foto do casal" class="foto-amor">
+        <img src="IMG-20240215-WA0023.jpg" alt="Foto do casal" class="foto-amor">
+      `;
+    });
+
+    botaoNao.addEventListener("mouseover", () => {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 100);
+      botaoNao.style.position = "absolute";
+      botaoNao.style.left = x + "px";
+      botaoNao.style.top = y + "px";
+    });
+  </script>
+</body>
+</html>
