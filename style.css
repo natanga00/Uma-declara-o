@@ -63,7 +63,7 @@ button {
 }
 
 .mensagem {
-  display: flex;
+  display:block;
   flex-wrap: wrap; /* permite que as imagens quebrem a linha */
   gap: 10px; /* espaço entre as imagens */
   justify-content: center;
@@ -73,6 +73,7 @@ button {
 }
 
 .foto-amor {
+  width: 100%;
   max-width: 150px; /* controla o tamanho máximo das imagens */
   height: auto;
   border-radius: 8px;
@@ -80,15 +81,6 @@ button {
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-@media (max-width: 600px) {
-  .foto-amor {
-    max-width: 100px;
-  }
-  
-  .container h1 {
-    font-size: 1.5rem;
-  }
-}
 .oculto {
   display: none;
 }
