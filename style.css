@@ -63,14 +63,16 @@ button {
 }
 
 .mensagem {
-  display:block;
-  flex-wrap: wrap; /* permite que as imagens quebrem a linha */
-  gap: 10px; /* espaço entre as imagens */
-  justify-content: center;
+  display: flex;
+  flex-direction: column; /* empilha elementos verticalmente */
+  align-items: center;    /* centraliza horizontalmente */
+  gap: 20px;              /* espaço entre texto e imagens */
   font-size: 1.5rem;
   color: #ff4081;
   margin-top: 40px;
+  text-align: center;
 }
+
 
 .foto-amor {
   display: block;
