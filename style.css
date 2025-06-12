@@ -73,6 +73,8 @@ button {
 }
 
 .foto-amor {
+  display: block;
+  margin: 20px auto 0 auto; /* centraliza e dá espaço acima */
   width: 100%;
   max-width: 150px; /* controla o tamanho máximo das imagens */
   height: auto;
