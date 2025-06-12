@@ -86,7 +86,7 @@ button {
 
 /* Estilo para as imagens em grid horizontal com quebra automática */
 .foto-amor {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
