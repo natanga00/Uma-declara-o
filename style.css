@@ -1,4 +1,4 @@
-** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,6 +11,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 40px 30px rgba(0, 0, 0, 0.2);
   max-width: 800px;
+  max-height: 90vh;
   overflow-y: auto;
 }
 
@@ -34,6 +37,7 @@ h1 {
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 button {
@@ -80,21 +84,16 @@ button {
   line-height: 1.6;
 }
 
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
+/* Estilo para as imagens em grid horizontal com quebra automática */
 .foto-amor {
-  max-width: 150px;
-  width: 100%;
+  width: 120px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin: 10px;
 }
 
-.oculto {
-  display: none;
+/* Agrupa as imagens horizontalmente com quebra */
+.mensagem img.foto-amor {
+  display: inline-block;
 }
